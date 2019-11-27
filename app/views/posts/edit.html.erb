@@ -21,3 +21,13 @@
   <%= submit_tag "Update" %>
 <% end %>
 
+
+<div>
+  
+</div>
+
+<% if !@validator.nil? %>
+  <div class="field_with_errors">
+    <%= @validator.errors.messages.stringify_keys.keys[0] + ' ' + @validator.errors.messages[@validator.errors.messages.keys[0]][0] %>
+  </div>
+<% end %> 

@@ -10,3 +10,12 @@
   </div>
   <%= submit_tag "Create Author" %>
 <% end %>
+<div>
+	
+</div>
+
+<% if @author %>
+	<div class="field_with_errors">
+		<%= @author.errors.messages.keys[0].to_s + ' ' + @author.errors.messages[:name][0] %>
+	</div>
+<% end %> 
