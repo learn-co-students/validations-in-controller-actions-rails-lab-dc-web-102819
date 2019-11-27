@@ -1,3 +1,6 @@
+Author.delete_all
+Post.delete_all
+
 Author.create!(
   name: "Ada Lovelace", email: "ada@the-history-of-programming.com"
 )
